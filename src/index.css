@@ -15,6 +15,7 @@ body{
   color: white;
 }
 .container{
+  display: flex;
   width: 90vw;
   height: 90vh;
   background-color: rgba(17,25, 40,0.75);
