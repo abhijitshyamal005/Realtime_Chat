@@ -23,47 +23,9 @@ export const Chatlist = () => {
           <p>Hey abhi .....</p>
 
         </div>
+      
       </div>
-      <div className="item">
-        <img src="../../../../public/avatar.png" alt="" />
-        <div className="texts">
-          <span>Labani</span>
-          <p>Hey abhi .....</p>
-
-        </div>
-      </div>
-      <div className="item">
-        <img src="../../../../public/avatar.png" alt="" />
-        <div className="texts">
-          <span>Labani</span>
-          <p>Hey abhi .....</p>
-
-        </div>
-      </div>
-      <div className="item">
-        <img src="../../../../public/avatar.png" alt="" />
-        <div className="texts">
-          <span>Labani</span>
-          <p>Hey abhi .....</p>
-
-        </div>
-      </div>
-      <div className="item">
-        <img src="../../../../public/avatar.png" alt="" />
-        <div className="texts">
-          <span>Labani</span>
-          <p>Hey abhi .....</p>
-
-        </div>
-      </div>
-      <div className="item">
-        <img src="../../../../public/avatar.png" alt="" />
-        <div className="texts">
-          <span>Labani</span>
-          <p>Hey abhi .....</p>
-
-        </div>
-      </div>
+  
       <div className="item">
         <img src="../../../../public/avatar.png" alt="" />
         <div className="texts">
