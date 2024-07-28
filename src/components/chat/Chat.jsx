@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "./chat.css"
 import EmojiPicker from 'emoji-picker-react';
 
 function Chat() {
   const [open, setOpen] = useState(false)
   const [text, settext] = useState("")
+
+  const endRef = useRef(null);
+
+  useEffect(() => {
+    endRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, []);
 
   const handleEmoji = (e) => {
     settext((prev) => prev + e.emoji);
@@ -72,27 +78,28 @@ function Chat() {
 
           </div>
         </div>
-        
-        </div>
-        <div className="bottom">
-          <div className="icons">
-            <img src="../../../../public/img.png" alt="" />
-            <img src="../../../../public/camera.png" alt="" />
-            <img src="../../../../public/mic.png" alt="" />
-          </div>
-          <input type="text" placeholder='Type a message..........'
-            value={text}
-            onChange={e => settext(e.target.value)} />
-          <div className="emoji">
-            <img src="../../../../public/emoji.png" alt="" onClick={() => setOpen(prev => !prev)} />
-            <div className="picker">
-              <EmojiPicker open={open} onEmojiClick={handleEmoji} />
-            </div>
-          </div>
-          <button className='sendButton'>Send</button>
-        </div>
+        <div className="" ref={endRef}></div>
+
       </div>
-    
+      <div className="bottom">
+        <div className="icons">
+          <img src="../../../../public/img.png" alt="" />
+          <img src="../../../../public/camera.png" alt="" />
+          <img src="../../../../public/mic.png" alt="" />
+        </div>
+        <input type="text" placeholder='Type a message..........'
+          value={text}
+          onChange={e => settext(e.target.value)} />
+        <div className="emoji">
+          <img src="../../../../public/emoji.png" alt="" onClick={() => setOpen(prev => !prev)} />
+          <div className="picker">
+            <EmojiPicker open={open} onEmojiClick={handleEmoji} />
+          </div>
+        </div>
+        <button className='sendButton'>Send</button>
+      </div>
+    </div>
+
   )
 }
 
