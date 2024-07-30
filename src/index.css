@@ -28,3 +28,14 @@ body{
   -o-border-radius: 12px;
   border: 1px solid rgba(255,255, 255,0.125) ;
 }
+.loading{
+  padding: 50px;
+  font-size: 36px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgba(17,25,40,0.9);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
