@@ -54,9 +54,9 @@ export const Chatlist = () => {
       </div>
       {chats.map((chat) => (
         <div className="item" key={chat.chatId}>
-          <img src="../../../../public/avatar.png" alt="" />
+          <img src={chat.user.avatar ||"../../../../public/avatar.png"} alt="" />
           <div className="texts">
-            <span>Labani</span>
+            <span>{chat.user.username}</span>
             <p>{chat.lastMessage}</p>
 
           </div>
